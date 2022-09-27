@@ -13,7 +13,7 @@ DEVICE_PATH := device/realme/ferrarri
 TARGET_KERNEL_CONFIG += vendor/oplus/ferrari.config
 
 # Display
-TARGET_SCREEN_DENSITY := 450
+TARGET_SCREEN_DENSITY := 420
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
