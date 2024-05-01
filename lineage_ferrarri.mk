@@ -14,6 +14,23 @@ $(call inherit-product, device/realme/ferrarri/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Rising
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon 8 Gen 1" \
+    RISING_MAINTAINER="Arman-ATI"
+
+TARGET_USES_OPLUS_CAMERA := true
+TARGET_ENABLE_BLUR := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+# Gapps
+WITH_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+
+# ADB root
+ALLOW_ADBD_ROOT := true
+ALLOW_LOCAL_PROP_OVERRIDE := true
+
 PRODUCT_NAME := lineage_ferrarri
 PRODUCT_DEVICE := ferrarri
 PRODUCT_MANUFACTURER := realme
