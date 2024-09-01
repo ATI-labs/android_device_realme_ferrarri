@@ -14,6 +14,9 @@ $(call inherit-product, device/realme/ferrarri/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Prebuilt kernel
+#PREBUILT_KERNEL := true
+
 # Everest
 EVEREST_BUILD_TYPE := OFFICIAL
 EVEREST_MAINTAINER := Arman-ATI
